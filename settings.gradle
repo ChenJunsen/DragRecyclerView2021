@@ -1,0 +1,3 @@
+include ':third'
+include ':app'
+rootProject.name = "DragRecyclerView"
