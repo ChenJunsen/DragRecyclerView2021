@@ -95,6 +95,13 @@ public abstract class BaseActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(getColorResCompat(R.color.white));
         toolbar.setNavigationIcon(getDrawableResCompat(R.drawable.ic_back));
         setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        toolbar.setNavigationOnClickListener(v -> onToolBarBackClick());
+    }
+
+    /**
+     * ToolBar的返回键点击事件，复写该方法来实现自定义返回事件
+     */
+    public void onToolBarBackClick() {
+        finish();
     }
 }
