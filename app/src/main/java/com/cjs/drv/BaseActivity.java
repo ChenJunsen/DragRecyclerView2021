@@ -82,11 +82,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     public void toastShort(String msg) {
-        ToastUtils.showShort(this, msg);
+        ToastUtils.showShort(this.getApplicationContext(), msg);
     }
 
     public void toastLong(String msg) {
-        ToastUtils.showLong(this, msg);
+        ToastUtils.showLong(this.getApplicationContext(), msg);
     }
 
     private void initToolBar(@IdRes int toolBarId) {
